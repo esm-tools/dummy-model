@@ -13,4 +13,4 @@ jobs:
       - name: Run CMake
         run: cd build; cmake ..
       - name: Build
-        run: make install -j `nproc --all`
+        run: cd build; make install -j `nproc --all`
